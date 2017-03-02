@@ -1,6 +1,6 @@
 package com.journaldev.spring.model;
 
-import com.journaldev.spring.aspect.Loggable;
+import org.springframework.stereotype.Component;
 
 public class Employee {
 
@@ -10,7 +10,6 @@ public class Employee {
 		return name;
 	}
 
-	@Loggable
 	public void setName(String nm) {
 		this.name=nm;
 	}
@@ -18,5 +17,11 @@ public class Employee {
 	public void throwException(){
 		throw new RuntimeException("Dummy Exception");
 	}
-	
+
+	public Employee(String name) {
+		this.name = name;
+	}
+
+	public Employee() {
+	}
 }

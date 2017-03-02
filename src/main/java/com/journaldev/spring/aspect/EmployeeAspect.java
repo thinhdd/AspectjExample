@@ -8,11 +8,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class EmployeeAspect {
 
-	@Before("execution(public String getName())")
+	@Before("execution(public com.journaldev.spring.model.Employee getEmployee())")
 	public void getNameAdvice(){
-		System.out.println("Executing Advice on getName()");
+		System.out.println("Executing Advice on getEmployee()");
 	}
-	
+
 	@Before("execution(* com.journaldev.spring.service.*.get*())")
 	public void getAllAdvice(){
 		System.out.println("Service method getter called");

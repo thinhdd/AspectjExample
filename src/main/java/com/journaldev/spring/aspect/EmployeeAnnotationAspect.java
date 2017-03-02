@@ -4,11 +4,11 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
-@Aspect
+//@Aspect
 @Component
 public class EmployeeAnnotationAspect {
 
-	@Before("@annotation(com.journaldev.spring.aspect.Loggable)")
+//	@Before("@annotation(com.journaldev.spring.aspect.Loggable)")
 	public void myAdvice(){
 		System.out.println("Executing myAdvice!!");
 	}

@@ -5,20 +5,20 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
-@Aspect
+//@Aspect
 @Component
 public class EmployeeAroundAspect {
 
-	@Around("execution(* com.journaldev.spring.model.Employee.getName())")
+	@Around("execution(* com.journaldev.spring.service.EmployeeService.getEmployee())")
 	public Object employeeAroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
-		System.out.println("Before invoking getName() method");
+		System.out.println("Before invoking getEmployee() method");
 		Object value = null;
 		try {
 			value = proceedingJoinPoint.proceed();
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
-		System.out.println("After invoking getName() method. Return value="+value);
+		System.out.println("After invoking getEmployee() method. Return value="+value);
 		return value;
 	}
 }
