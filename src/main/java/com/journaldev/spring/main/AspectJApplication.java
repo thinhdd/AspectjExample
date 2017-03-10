@@ -8,7 +8,6 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "com.journaldev.spring")
-@EnableAspectJAutoProxy
 @EnableAutoConfiguration
 public class AspectJApplication {
 

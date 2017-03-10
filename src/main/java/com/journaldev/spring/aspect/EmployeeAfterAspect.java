@@ -8,14 +8,9 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
-////@Aspect
+@Aspect
 @Component
 public class EmployeeAfterAspect {
-
-//	@After("args(name)")
-//	public void logStringArguments(String name){
-//		System.out.println("Running After Advice. String argument passed="+name);
-//	}
 
 	@AfterThrowing("within(com.journaldev.spring.service.EmployeeService)")
 	public void logExceptions(JoinPoint joinPoint){

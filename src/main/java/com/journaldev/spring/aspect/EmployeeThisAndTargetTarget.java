@@ -18,13 +18,7 @@ public class EmployeeThisAndTargetTarget {
 
     @After("execution(* *..EmployeeService.getEmployee()) && this(s)")
     public void getNameReturningAdviceAfterWithThis(Object s) {
-        System.out.println("target ok");
-
-    }
-    
-    @After("execution(* *..EmployeeService.getEmployee()) && @target(s)")
-    public void getNameReturningAdviceAfterWithAnoTarget(Object s) {
-        System.out.println("target ok");
+        System.out.println("this ok");
 
     }
 
