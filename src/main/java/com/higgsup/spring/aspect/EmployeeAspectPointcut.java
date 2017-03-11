@@ -1,4 +1,4 @@
-package com.journaldev.spring.aspect;
+package com.higgsup.spring.aspect;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -28,7 +28,7 @@ public class EmployeeAspectPointcut {
 	}
 
 	//Pointcut to execute on all the methods of classes in a package
-	@Pointcut("within(com.journaldev.spring.service.*)")
+	@Pointcut("within(com.higgsup.spring.service.*)")
 	public void allMethodsPointcut(){}
 
 }

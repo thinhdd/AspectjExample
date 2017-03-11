@@ -1,4 +1,4 @@
-package com.journaldev.spring.aspect;
+package com.higgsup.spring.aspect;
 
 import java.util.Arrays;
 
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class EmployeeAspectJoinPoint {
 
 
-	@Before("execution(public void com.journaldev.spring.service..set*(*))")
+	@Before("execution(public void com.higgsup.spring.service..set*(*))")
 	public void loggingAdvice(JoinPoint joinPoint){
 		System.out.println("Before running loggingAdvice on method="+joinPoint.toString());
 

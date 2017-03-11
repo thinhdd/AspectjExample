@@ -1,4 +1,4 @@
-package com.journaldev.spring.aspect;
+package com.higgsup.spring.aspect;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;

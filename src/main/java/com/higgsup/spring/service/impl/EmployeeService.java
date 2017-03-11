@@ -1,8 +1,8 @@
-package com.journaldev.spring.service.impl;
+package com.higgsup.spring.service.impl;
 
-import com.journaldev.spring.model.Employee;
-import com.journaldev.spring.service.interfaces.IEmployeeService;
-import com.journaldev.spring.stereotype.Logger;
+import com.higgsup.spring.model.Employee;
+import com.higgsup.spring.service.interfaces.IEmployeeService;
+import com.higgsup.spring.stereotype.Logger;
 import org.springframework.stereotype.Service;
 
 @Service

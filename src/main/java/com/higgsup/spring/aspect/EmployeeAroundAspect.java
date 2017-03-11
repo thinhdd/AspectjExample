@@ -1,4 +1,4 @@
-package com.journaldev.spring.aspect;
+package com.higgsup.spring.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class EmployeeAroundAspect {
 
-	@Around("execution(* com.journaldev.spring.service.EmployeeService.getEmployee())")
+	@Around("execution(* com.higgsup.spring.service.EmployeeService.getEmployee())")
 	public Object employeeAroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
 		System.out.println("Before invoking getEmployee() method");
 		Object value = null;

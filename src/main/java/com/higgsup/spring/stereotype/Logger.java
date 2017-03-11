@@ -1,4 +1,4 @@
-package com.journaldev.spring.stereotype;
+package com.higgsup.spring.stereotype;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

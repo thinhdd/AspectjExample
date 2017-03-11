@@ -1,6 +1,6 @@
-package com.journaldev.spring.service.interfaces;
+package com.higgsup.spring.service.interfaces;
 
-import com.journaldev.spring.model.Employee;
+import com.higgsup.spring.model.Employee;
 
 /**
  * Created by thinhdd on 3/2/2017.

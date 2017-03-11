@@ -1,6 +1,4 @@
-package com.journaldev.spring.model;
-
-import org.springframework.stereotype.Component;
+package com.higgsup.spring.model;
 
 public class Employee {
 

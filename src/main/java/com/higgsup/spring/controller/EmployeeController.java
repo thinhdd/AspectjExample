@@ -1,8 +1,7 @@
-package com.journaldev.spring.controller;
+package com.higgsup.spring.controller;
 
-import com.journaldev.spring.model.Employee;
-import com.journaldev.spring.service.impl.EmployeeService;
-import com.journaldev.spring.service.interfaces.IEmployeeService;
+import com.higgsup.spring.model.Employee;
+import com.higgsup.spring.service.interfaces.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
